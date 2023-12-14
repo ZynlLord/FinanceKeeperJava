@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_wallet"
+    android:padding="16dp"
+    android:layout_height="100dp"
+    android:elevation="8dp"
+
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/darkgreen"
+        >
+
+        <TextView
+            android:id="@+id/wallet_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="4dp"
+            android:text="Wallet Name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@id/wallet_name_text_view"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/wallet_balance_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:paddingStart="16dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:text="Balance: $0.00"
+            android:layout_gravity="start"/>
+
+   <!--     <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/wallet_name_text_view"
+            android:id="@+id/edit_wallet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Изменить"
+            android:layout_gravity="end"
+        />
+
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/edit_wallet_button"
+            android:id="@+id/delete_wallet_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Удалить"
+            />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".presentation.auth.SignUpActivity">
+
+    <EditText
+        android:id="@+id/surname_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:hint="@string/surname_hint_text"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/surname_err_tv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/surname_error_text"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/surname_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/name_et"
+        />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:textColor="@color/white"
+        android:hint="@string/name_hint_text"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/surname_err_tv" />
+
+    <TextView
+        android:id="@+id/name_err_tv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/name_error_text"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/name_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/login_et"
+        />
+
+    <EditText
+        android:id="@+id/login_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:textColor="@color/white"
+        android:hint="@string/login_hint_text"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_et"
+        app:layout_constraintBottom_toTopOf="@id/login_err_tv"
+        />
+
+    <TextView
+        android:id="@+id/login_err_tv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/login_error_text"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/login_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/password_et"
+        />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:hint="@string/password_hint_text"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_err_tv"
+        app:layout_constraintBottom_toTopOf="@id/password_error_tv"
+        />
+
+    <TextView
+        android:id="@+id/password_error_tv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/password_error_text"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/password_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/password_repeat_et"
+        />
+
+    <EditText
+        android:id="@+id/password_repeat_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:textColor="@color/white"
+        android:hint="@string/repeat_pass_hint_text"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_error_tv" />
+
+    <TextView
+        android:id="@+id/repeat_err_tv"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="@string/repeat_err_text"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/password_repeat_et"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/avatar_et"
+        />
+
+    <EditText
+        android:id="@+id/avatar_et"
+        android:layout_width="350dp"
+        android:layout_height="75dp"
+        android:layout_margin="8dp"
+        android:autofillHints="no"
+        android:textColor="@color/white"
+        android:hint="@string/link_to_avatar"
+        android:inputType="textUri"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeat_err_tv" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_up_btn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/signup_btn_text"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/avatar_et" />
+
+    <!--<TextView
+        android:id="@+id/already_acc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Есть аккаунт?"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_btn" />
+-->
+    <TextView
+        android:id="@+id/to_login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/voiti"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_up_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

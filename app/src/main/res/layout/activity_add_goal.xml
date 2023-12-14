@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".presentation.main.goals.AddGoalActivity">
+
+    <!-- Заголовок -->
+    <TextView
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить Цель"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Поле для ввода названия цели -->
+    <EditText
+        android:id="@+id/editTextGoalName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Название цели"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="text"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Поле для ввода суммы цели -->
+    <EditText
+        android:id="@+id/editTextGoalAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Сумма цели"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGoalName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Поле для ввода даты завершения цели -->
+    <EditText
+        android:id="@+id/editTextGoalDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Дата завершения (гггг-мм-дд)"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="date"
+        android:maxLines="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGoalAmount"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Выбрать дату"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGoalDate"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Кнопка "Добавить" -->
+    <Button
+        android:id="@+id/buttonAddGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSelectDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

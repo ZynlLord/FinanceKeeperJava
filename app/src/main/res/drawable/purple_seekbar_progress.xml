@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="10dp" /> <!-- Закругление углов для фона полоски -->
+            <solid android:color="@color/darkgreen" /> <!-- Цвет фона полоски -->
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="10dp" /> <!-- Закругление углов для полоски прогресса -->
+                <solid android:color="@android:color/holo_green_dark" /> <!-- Цвет полоски прогресса -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

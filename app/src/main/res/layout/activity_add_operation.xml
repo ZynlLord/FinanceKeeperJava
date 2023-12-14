@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".presentation.main.operations.AddOperationActivity">
+
+
+
+    <EditText
+        android:id="@+id/sum_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Сумма"
+        android:inputType="number"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selected_type_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/sum_et" />
+
+    <Spinner
+        android:id="@+id/type_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/selected_type_tv" />
+
+    <TextView
+        android:id="@+id/selected_wallet_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/type_spinner" />
+
+    <Spinner
+        android:id="@+id/wallet_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/selected_wallet_tv" />
+
+    <TextView
+        android:id="@+id/selected_category_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/wallet_spinner" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/selected_category_tv" />
+
+    <EditText
+        android:id="@+id/comment_et"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textColorHint="@color/white"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        android:hint="Примечание"
+        app:layout_constraintTop_toBottomOf="@id/category_spinner" />
+
+
+    <GridLayout
+        android:id="@+id/grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:columnCount="4"
+        android:padding="10dp"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:backgroundTint="@android:color/black"
+            android:text="1"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button2"
+            android:backgroundTint="@android:color/black"
+            android:text="2"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button3"
+            android:backgroundTint="@android:color/black"
+            android:text="3"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            android:layout_width="128dp"
+            android:backgroundTint="@android:color/black"
+            android:text="+"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button4"
+            android:backgroundTint="@android:color/black"
+            android:text="4"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button5"
+            android:backgroundTint="@android:color/black"
+            android:text="5"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button6"
+            android:backgroundTint="@android:color/black"
+            android:text="6"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            android:layout_width="128dp"
+            android:backgroundTint="@android:color/black"
+            android:text="-"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button7"
+            android:backgroundTint="@android:color/black"
+            android:text="7"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button8"
+            android:backgroundTint="@android:color/black"
+            android:text="8"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button9"
+            android:backgroundTint="@android:color/black"
+            android:text="9"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonMultiply"
+            android:layout_width="128dp"
+            android:backgroundTint="@android:color/black"
+            android:text="*"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button0"
+            android:backgroundTint="@android:color/black"
+            android:text="0"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/button000"
+            android:backgroundTint="@android:color/black"
+            android:text="000"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonDot"
+            android:backgroundTint="@android:color/black"
+            android:text="."
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonDivide"
+            android:layout_width="128dp"
+            android:backgroundTint="@android:color/black"
+            android:text="/"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonClearOne"
+            android:backgroundTint="@android:color/black"
+            android:text="C"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonClearAll"
+            android:backgroundTint="@android:color/black"
+            android:text="AC"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonPercent"
+            android:backgroundTint="@android:color/black"
+            android:text="%"
+            android:textColor="@android:color/holo_green_light" />
+
+        <Button
+            android:id="@+id/buttonEquals"
+            android:layout_width="128dp"
+            android:backgroundTint="@android:color/black"
+            android:text="="
+            android:textColor="@android:color/holo_green_light" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_Operation"
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:background="@color/darkgreen"
+            android:text="Добавить"
+            android:textColor="@color/white"
+            />
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

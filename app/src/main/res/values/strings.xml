@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">FinanceKeeperJava</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="voiti"><u>Войти</u></string>
+    <string name="zareg"><u>Создать</u></string>
+    <string name="add">Добавить</string>
+    <string name="done">DONE</string>
+    <string name="leave_btn_text">Выйти</string>
+    <string name="save_btn_text">Сохранить</string>
+    <string name="financekeeperwelcome_text">Добро пожаловать в FinanceKeeper</string>
+    <string name="enter_btn_text">Войти</string>
+    <string name="signup_btn_text">Зарегистрироваться</string>
+    <string name="surname_hint_text">Фамилия</string>
+    <string name="name_hint_text">Имя</string>
+    <string name="login_hint_text">Логин</string>
+    <string name="password_hint_text">Пароль</string>
+    <string name="repeat_pass_hint_text">Повторите пароль</string>
+    <string name="enter_login_text">Введите логин</string>
+    <string name="enter_pass_text">Введите пароль</string>
+    <string name="dont_have_acc_text">Нет аккаунта?</string>
+    <string name="surname_error_text">Поле фамилия не может быть пустым</string>
+    <string name="name_error_text">Поле имя не может быть пустым</string>
+    <string name="repeat_err_text">Пароли не совпадают</string>
+    <string name="login_error_text">Логин должен быть длиннее 8 символов и содержать хотя бы одну цифру и специальный символ</string>
+    <string name="password_error_text">Пароль должен быть длинее 8 символов и содержать хотя бы одну цифру и специальный символ</string>
+    <string name="name_text">Название</string>
+    <string name="link_for_icon_text">Ссылка на иконку</string>
+    <string name="category_name_text">Название категории</string>
+    <string name="add_text">Добавить</string>
+    <string name="link_to_avatar">Ссылка на аватар</string>
+    <string name="example_date_text">25 апреля 2023</string>
+    <string name="example_cost_text">2500</string>
+    <string name="example_category_name_ext">Питание</string>
+    <string name="button">button</string>
+    <string name="id">id</string>
+
+</resources>
